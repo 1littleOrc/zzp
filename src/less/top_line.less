@@ -1,0 +1,34 @@
+.top_line {
+	background-color: @white;
+	width: 100%;
+	&_label {
+		&_left {
+			font-size: 1.5rem;
+			margin-top: 3.5rem;
+		}
+		&_right, &_phone {
+			text-align: right;
+			display: block;
+		}
+		&_right {
+			margin-top: 1.3rem;
+			font-size: 1.3rem;
+			&_bottom {
+				margin-bottom: 1.3rem;
+				text-align: right;
+			}
+		}
+		&_phone {
+			font-size: 2.5rem;
+			font-weight: 700;
+			color: @blue;
+		}
+	}
+}
+@media (max-width: 768px) { 
+	.top_line_label { 
+		&_left, &_right, &_right_bottom, &_phone {
+			text-align: center;
+		}
+	}
+}

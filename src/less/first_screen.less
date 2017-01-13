@@ -1,0 +1,72 @@
+.first_screen {
+	background: url(../img/first-screen-bg.jpg) no-repeat @white;
+	background-position: center center;
+	background-size: cover;
+	height: 100vh;
+	min-height: 100%;
+}
+
+.fs_form {
+	border-radius: 5px;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+	padding: 4rem;
+	background-color: @white;
+	width: 100%;
+	&_label {
+		&_h {
+			font-size: 2.5rem;
+			font-weight: 700;
+			color: @red;
+		}
+		&_p {
+			color: @red;
+			font-size: 1.5rem;
+		}
+		&_before {
+			margin-top: 2rem;
+			font-size: 1.3rem;
+			margin-bottom: 0.5rem;
+		}
+	}
+}
+.items {
+	margin-top: 5rem;
+}
+.fs_item {
+	margin-bottom: 1rem;
+	background: linear-gradient(to top, @blue-from-gradient, @blue-to-gradient);
+	color: @white;
+	position: relative;
+	border-left: 10px solid @blue-fade;
+	&_label {
+		font-size: 2.5rem;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+	&_counter {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		&_label {
+			background-color: @almost-white;
+			color: @blue-to-gradient;
+			font-size: 2.5rem;
+			padding: 1rem 0rem;
+			text-align: center;
+			border-radius: 5px;
+		}
+	}
+}
+
+.fs_little_form {
+	border-radius: 5px;
+	background-color: @white;
+	width: 100%;
+	padding: 5rem;
+	& > form > div {
+		color: @almost-black;
+		font-size: 1.25rem;
+		text-align: justify;
+	}
+}
+

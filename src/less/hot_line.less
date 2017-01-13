@@ -1,0 +1,72 @@
+.hot_line {
+	background: 
+	linear-gradient(
+			      rgba(255, 255, 255, 0.75), 
+			      rgba(255, 255, 255, 0.75)
+			    ),
+	url(../img/hot-line-bg.jpg) no-repeat @white;
+	background-position: center center;
+	background-size: cover;
+	// max-height: 100%;
+	&_right {
+		text-align: right;
+		&_hd1 {
+			font-size: 1.8rem;
+			color: @blue-to-gradient;
+			margin-top: 5rem;
+			
+		}
+		&_hd2 {
+			color: @black;
+			font-size: 2.3rem;
+			font-weight: 700;
+			margin-top: 6rem;
+			margin-bottom: 3rem;
+		}
+		&_hd3 {
+			color: @red;
+			font-weight: 700;
+			font-size: 4rem;
+			&:before {
+				content: 'Бесплатная юридическая консультация';
+				font-size: 1.5rem;
+				display: block;
+				font-weight: 400;
+				color: @grey;
+			}
+			&:after {
+				content: 'Ежедневно с 9:00-21:00';
+				font-size: 1.5rem;
+				display: block;
+				color: @blue-to-gradient;
+				font-weight: 400;
+			}
+		}
+		&_hd4 {
+			font-size: 1.8rem;
+			color: @black;
+			font-weight: 700;
+			margin-top: 7rem;
+			&:before {
+				content: 'Проект реализован в рамках:';
+				font-size: 1.8rem;
+				display: block;
+			}
+		}
+		&_hd5 {
+			margin-top: 3rem;
+			margin-bottom: 3rem;
+			color: @grey;
+			font-size: 1.8rem;
+		}
+		&_hf6 {
+			color: @black;
+			font-size: 1.8rem;
+		}
+	}
+}
+@media (max-width: 768px) { 
+	.hot_line_right {
+		text-align: left;
+	}
+}

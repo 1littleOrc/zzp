@@ -1,0 +1,60 @@
+.stat {
+	background: 
+			    linear-gradient(
+			      rgba(255, 255, 255, 0.75), 
+			      rgba(255, 255, 255, 0.75)
+			    ),
+			    url(../img/stat-general-bg.jpg) center center no-repeat @white;
+			background-position: center center;
+			background-size: cover;
+	&_bg {
+		background: url(../img/stat-man-bg.png)  right bottom no-repeat;
+		background-size: 100vh;
+	}
+	&_left {
+		&_hd1, &_hd2  {	
+			font-size: 3.5rem;
+			text-transform: uppercase;
+			font-weight: 700;
+		}
+		&_hd1 {
+			margin-top: 10rem;
+			color: @black;
+		}
+		&_hd2 {
+			color: @blue-to-gradient;
+			margin-bottom: 2rem;
+		}
+		&_list {
+			list-style: none;
+			margin-bottom: 10rem;
+			&_item {
+				&:before{
+				   content: '';
+				   display: inline-block;
+				   height: 1.8rem;
+				   width: 1.8rem;
+				   background-image: url(../img/checked.png);
+				   background-size: contain; 
+				   background-repeat: no-repeat;
+				}
+				margin-bottom: 1rem;
+				padding-left: 1rem;
+    			display: block;
+				font-size: 1.8rem;
+			}
+		}
+	}
+	// &_right {
+	// 	height: inherit;
+	// 	&_bg {
+	// 		background-image: url('../img/stat-man-bg.png');
+	// 		height: inherit;
+	// 	}	
+	// }
+}
+@media (max-width: 1200px) { 
+	.stat_bg {
+		background-image: none !important;
+	}
+}
