@@ -31,10 +31,10 @@ myPlacemark = new ymaps.Placemark([55.814457, 49.188044], {
     myMap.behaviors.disable('scrollZoom');
   }
 
-	$(document).ready(function() {
-		$(".ajaxform").submit(function() {
-			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
-          // $("#thank_you_modal").modal("show");
-          // $(".ajaxform").trigger("reset");
-      });
-	});
+	// $(document).ready(function() {
+	// 	$(".big-form").submit(function() {
+	// 		alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+ //          	$("#thank_you_modal").modal("show");
+ //          // $(".ajaxform").trigger("reset");
+ //      });
+	// });
