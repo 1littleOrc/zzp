@@ -33,7 +33,14 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/main.js"></script>
 
-  
+  <script>
+      $(document).ready(function(){
+        $(".thnks").click(function(){
+            $("#gridSystemModal").modal("hide");
+            $("#thank_you_modal").modal("show");
+        });
+    });
+  </script>
 
   </body>
   </html>

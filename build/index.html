@@ -61,7 +61,7 @@
     								</div>
     							</div>
     							<div class="col-xs-12">
-    								<input type="tel" pattern="(\+?\d[- .]*){7,13}" name="phone" class="i-phone" placeholder="Например: 8 (800) 000-00-00" required>
+    								<input type="tel" pattern="(\+?\d[- .()]*){7,13}" name="phone" class="i-phone" placeholder="Например: 8 (800) 000-00-00" required>
     							</div>
     						</div>
     						<div class="col-xs-12 no-gutter">
@@ -76,7 +76,7 @@
     						</div>
     						<div class="col-xs-12 no-gutter">
     							<div class="col-xs-12">
-    								<button>
+    								<button   type="button" class="thnks">
     									Оставить жалобу
     								</button>
     							</div>
@@ -304,7 +304,7 @@
     								</div>
     							</div>
     							<div class="col-xs-12">
-    								<input type="tel" pattern="(\+?\d[- .]*){7,13}" name="phone" class="i-phone" placeholder="Например: 8 (800) 000-00-00" required>
+    								<input type="tel" pattern="(\+?\d[- .()]*){7,13}" name="phone" class="i-phone" placeholder="Например: 8 (800) 000-00-00" required>
     							</div>
     						</div>
     						<div class="col-xs-12 no-gutter">
@@ -319,7 +319,7 @@
     						</div>
     						<div class="col-xs-12 no-gutter">
     							<div class="col-xs-12">
-    								<button>
+    								<button type="button" class="thnks">
     									Оставить жалобу
     								</button>
     							</div>
@@ -420,7 +420,7 @@
                                     </div>
                                 </div>
                                 <div class="col-xs-12">
-                                    <input type="tel" pattern="(\+?\d[- .]*){7,13}" name="phone" class="i-phone" placeholder="Например: 8 (800) 000-00-00" required>
+                                    <input type="tel" pattern="(\+?\d[- .()]*){7,13}" name="phone" class="i-phone" placeholder="Например: 8 (800) 000-00-00" required>
                                 </div>
                             </div>
                             <div class="col-xs-12 no-gutter">
@@ -435,7 +435,7 @@
                             </div>
                             <div class="col-xs-12 no-gutter">
                                 <div class="col-xs-12">
-                                    <button type="button" data-toggle="modal" data-target="#thank_you_modal">
+                                    <button type="button" class="thnks">
                                         Оставить жалобу
                                     </button>
                                 </div>
@@ -455,12 +455,15 @@
                   <div class="row">
                     <div class="col-xs-12 fs_form_label_h">
                       Спасибо за заявку!
+                      <br><br>
                     </div>
                     <div class="col-xs-12">
                       Мы подготовим специалиста индивидуально по Вашему обращению и свяжемся с Вами в рабочие часы с 9:00 до 21:00 по Московскому времени!
+                      <br><br>
                     </div>
                     <div class="col-xs-12">
                        <button type="button" data-dismiss="modal" aria-label="Close">Спасибо</button>
+                       <br>
                     </div>
                   </div>
                 </div>
@@ -479,7 +482,14 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/main.js"></script>
 
-  
+  <script>
+      $(document).ready(function(){
+        $(".thnks").click(function(){
+            $("#gridSystemModal").modal("hide");
+            $("#thank_you_modal").modal("show");
+        });
+    });
+  </script>
 
   </body>
   </html>
